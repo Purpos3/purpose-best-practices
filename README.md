@@ -2,15 +2,51 @@
 
 This repository contains the official guidelines and best practices for software development at Purpose. Our primary goal is to **avoid human error** by establishing clear, consistent, and automated workflows.
 
+Our standards are open source under the [MIT License](LICENSE).
+
+---
+
+## Table of Contents
+1. [Guiding Principle](#guiding-principle-keep-it-clean-and-simple)
+2. [Repository Naming Conventions](#repository-naming-conventions)
+3. [Git Workflow](#git-workflow)
+4. [Commit Message Conventions](#commit-message-conventions)
+
+---
+
 ## Guiding Principle: Keep it Clean and Simple
 
 Everything we do should aim to reduce complexity and increase clarity. A clean `main` branch, understandable commit history, and consistent processes are key to our success.
+
+## Repository Naming Conventions
+
+To maintain a clear and organized structure within our GitHub organization, all repositories should follow a consistent naming scheme.
+
+### Application and Service Repositories
+
+All repositories that are part of our core application or related microservices must be prefixed with `purpose-`. The name should be lowercase and use hyphens to separate words.
+
+**Format:** `purpose-<service-or-app-name>`
+
+**Examples:**
+* `purpose-backend`
+* `purpose-employer-webapp`
+* `purpose-jobseeker-mobileapp`
+
+### Foundational & Meta Repositories
+
+Repositories that serve a foundational or organizational purpose (e.g., documentation, organization-wide configurations) may omit the prefix for clarity.
+
+**Examples:**
+* `.github` (For organization-wide profile and settings)
+* `purpose-best-practices` (This repository)
+* `design-system`
 
 ---
 
 ## Git Workflow
 
-Our Git workflow is designed to maintain a clean and linear project history in the `main` branch.
+Our Git workflow is designed to maintain a clean and linear project history in the `main` branch. All changes, even to this document, must be made via a pull request.
 
 ### 1. Squash Merges Only
 
