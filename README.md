@@ -1,6 +1,6 @@
-# Purpos3 Engineering Best Practices
+# Purpose Engineering Best Practices
 
-This repository contains the official guidelines and best practices for software development at Purpos3. Our primary goal is to **avoid human error** by establishing clear, consistent, and automated workflows.
+This repository contains the official guidelines and best practices for software development at Purpose. Our primary goal is to **avoid human error** by establishing clear, consistent, and automated workflows.
 
 ## Guiding Principle: Keep it Clean and Simple
 
@@ -23,6 +23,13 @@ All pull requests (PRs) targeting the `main` branch **must** be squash merged. T
 Each feature branch should be created for a single, specific purpose and result in exactly one pull request.
 
 *   **Process:** Once the pull request is merged, the feature branch is automatically closed and should be deleted. This prevents branch proliferation and confusion.
+
+### 3. Auto-Delete Head Branches
+
+All repositories **must** have the "Automatically delete head branches" setting enabled in GitHub.
+
+*   **How to enable:** Go to Settings → General → Pull Requests → Check "Automatically delete head branches"
+*   **Why?** This automatically cleans up feature branches after PRs are merged, reducing manual overhead and keeping the repository tidy. Deleted branches can still be restored if needed.
 
 ---
 
