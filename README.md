@@ -85,6 +85,14 @@ Each commit message should be prefixed with a type. The most common types are:
 
 **Example:** `feat: Add user authentication endpoint`
 
+### Commit Message Body Guidelines
+
+When adding a commit body (the detailed description after the subject line), keep it concise and focused:
+
+*   **Maximum 3 bullet points:** Commit bodies should contain no more than 3 bullet points of description.
+*   **Why?** This enforces clarity and prevents commits from becoming too large or unfocused. If you need more than 3 points, consider breaking the work into smaller, more atomic commits.
+*   **Applies to all commits:** This guideline applies to merge commits, squash commits, and regular commits alike.
+
 ---
 
 *This document is a living standard. Suggestions for improvement can be made via pull requests to this repository.*
