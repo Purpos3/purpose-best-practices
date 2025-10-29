@@ -46,21 +46,21 @@ Repositories that serve a foundational or organizational purpose (e.g., document
 
 ## Git Workflow
 
-Our Git workflow is designed to maintain a clean and linear project history in the `main` branch. All changes, even to this document, must be made via a pull request.
+Our Git workflow is designed to maintain a clean and linear project history in the `main` branch.
 
-### 1. Squash Merges Only
+### 1. Pull Request Requirements
 
-All pull requests (PRs) targeting the `main` branch **must** be squash merged. This condenses the feature's entire commit history into a single, meaningful commit on the `main` branch.
+All changes to `main` must go through a pull request. Direct commits to `main` are not allowed.
+
+*   **One PR Per Feature Branch:** Each feature branch should be created for a single, specific purpose and result in exactly one pull request.
+*   **Why?** This ensures all changes are reviewed and maintains a clear history of what was changed and why.
+
+### 2. Squash Merge Policy
+
+All pull requests targeting the `main` branch **must** be squash merged. This condenses the feature's entire commit history into a single, meaningful commit on the `main` branch.
 
 *   **Why?** It keeps the `main` branch history clean, readable, and focused on features and fixes rather than incremental work-in-progress commits.
-*   **PR Required:** Every merge to `main` must be associated with a pull request. Direct commits to `main` are not allowed.
 *   **PR Number Required:** All squash merge commit titles must include the PR number in brackets at the end (e.g., `feat: Add user authentication (#42)`). This creates traceability between commits and their corresponding pull requests.
-
-### 2. One Pull Request Per Feature Branch
-
-Each feature branch should be created for a single, specific purpose and result in exactly one pull request.
-
-*   **Process:** Once the pull request is merged, the feature branch is automatically closed and should be deleted. This prevents branch proliferation and confusion.
 
 ### 3. Auto-Delete Head Branches
 
