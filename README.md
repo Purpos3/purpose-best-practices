@@ -53,6 +53,8 @@ Our Git workflow is designed to maintain a clean and linear project history in t
 All pull requests (PRs) targeting the `main` branch **must** be squash merged. This condenses the feature's entire commit history into a single, meaningful commit on the `main` branch.
 
 *   **Why?** It keeps the `main` branch history clean, readable, and focused on features and fixes rather than incremental work-in-progress commits.
+*   **PR Required:** Every merge to `main` must be associated with a pull request. Direct commits to `main` are not allowed.
+*   **PR Number Required:** All squash merge commit titles must include the PR number in brackets at the end (e.g., `feat: Add user authentication (#42)`). This creates traceability between commits and their corresponding pull requests.
 
 ### 2. One Pull Request Per Feature Branch
 
