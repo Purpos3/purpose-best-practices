@@ -102,11 +102,26 @@ When adding a commit body (the detailed description after the subject line), kee
 
 AI tools (such as Claude, GitHub Copilot, ChatGPT, etc.) are allowed and encouraged for coding assistance, but must be used responsibly.
 
-### Manual Code Review Requirement
+### Development Workflow with AI
 
-*   **Always Review AI-Generated Code:** All code generated or assisted by AI must be manually reviewed and understood by a human developer before being merged.
-*   **PR Review is Mandatory:** At the latest, this manual review must occur during the pull request review process.
-*   **Why?** AI can introduce errors, security vulnerabilities, or code that doesn't align with our standards. Human oversight ensures quality and maintains developer accountability.
+AI can significantly accelerate development, and we embrace its use throughout the development process with appropriate safeguards.
+
+#### During Development (Feature Branch)
+
+*   **AI-Assisted Commits are Allowed:** You may create entire commits with AI assistance without detailed manual review during active development on your feature branch.
+*   **Iterate Freely:** Use AI to rapidly prototype, refactor, and experiment. The feature branch is your workspace for iteration.
+*   **Why?** This allows for maximum development velocity while the code is still in progress and not yet integrated into the main codebase.
+
+#### Before Merging (Pull Request Review)
+
+*   **Manual Review is Mandatory:** At the latest, all AI-generated or AI-assisted code must be thoroughly reviewed and understood by a human developer during the pull request review process before merging to `main`.
+*   **Review Checklist:**
+    *   Understand what the code does and how it works
+    *   Verify it follows our coding standards and best practices
+    *   Check for potential security vulnerabilities
+    *   Ensure it integrates properly with existing code
+    *   Confirm tests are adequate and passing
+*   **Why?** This ensures code quality, maintains security standards, and guarantees that every developer understands and takes responsibility for the code entering our main branch. The PR review is the critical gate for code quality.
 
 ### Commit Authorship
 
