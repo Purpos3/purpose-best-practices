@@ -11,6 +11,7 @@ Our standards are open source under the [MIT License](LICENSE).
 2. [Repository Naming Conventions](#repository-naming-conventions)
 3. [Git Workflow](#git-workflow)
 4. [Commit Message Conventions](#commit-message-conventions)
+5. [AI-Assisted Development](#ai-assisted-development)
 
 ---
 
@@ -94,6 +95,28 @@ When adding a commit body (the detailed description after the subject line), kee
 *   **Maximum 3 bullet points:** Commit bodies should contain no more than 3 bullet points of description.
 *   **Why?** This enforces clarity and prevents commits from becoming too large or unfocused. If you need more than 3 points, consider breaking the work into smaller, more atomic commits.
 *   **Applies to all commits:** This guideline applies to merge commits, squash commits, and regular commits alike.
+
+---
+
+## AI-Assisted Development
+
+AI tools (such as Claude, GitHub Copilot, ChatGPT, etc.) are allowed and encouraged for coding assistance, but must be used responsibly.
+
+### Manual Code Review Requirement
+
+*   **Always Review AI-Generated Code:** All code generated or assisted by AI must be manually reviewed and understood by a human developer before being merged.
+*   **PR Review is Mandatory:** At the latest, this manual review must occur during the pull request review process.
+*   **Why?** AI can introduce errors, security vulnerabilities, or code that doesn't align with our standards. Human oversight ensures quality and maintains developer accountability.
+
+### Commit Authorship
+
+*   **No AI Co-Authors:** AI tools should never be listed as co-authors in commit messages.
+*   **Example of what NOT to do:**
+    ```
+    Co-Authored-By: Claude <noreply@anthropic.com>
+    Co-Authored-By: GitHub Copilot <noreply@github.com>
+    ```
+*   **Why?** Commits should reflect human authorship and responsibility. While AI is a helpful tool, the developer is ultimately responsible for all code committed to the repository.
 
 ---
 
