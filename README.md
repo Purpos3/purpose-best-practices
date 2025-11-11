@@ -70,6 +70,28 @@ All repositories **must** have the "Automatically delete head branches" setting 
 *   **How to enable:** Go to Settings → General → Pull Requests → Check "Automatically delete head branches"
 *   **Why?** This automatically cleans up feature branches after PRs are merged, reducing manual overhead and keeping the repository tidy. Deleted branches can still be restored if needed.
 
+### 4. Pull Request Review Requirements
+
+Most changes can be self-reviewed and merged by the author. However, certain changes require explicit stakeholder approval due to their cross-team impact.
+
+#### Standard PRs (Self-Review)
+
+Most pull requests fall into this category and can be merged after self-review.
+
+*   **Examples:** Bug fixes, feature additions, refactoring, tests, documentation updates within your area of responsibility
+*   **Review Process:** Self-review is sufficient. Merge after thorough self-review.
+
+#### Stakeholder Approval Required
+
+Changes that modify interfaces between teams or introduce breaking changes require approval from affected stakeholders.
+
+*   **Examples:**
+    *   Breaking API changes that affect consumers (frontend, mobile apps, external clients)
+    *   Integrating another team's system (e.g., connecting ML models to the API for frontend consumption)
+    *   Modifying shared contracts or interfaces between teams
+*   **Review Process:** Tag and get approval from affected team members before merging.
+*   **Why?** Ensures coordination when connecting systems and prevents breaking dependent services.
+
 ---
 
 ## Commit Message Conventions
